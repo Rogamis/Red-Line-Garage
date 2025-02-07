@@ -13,6 +13,17 @@
 
     {{ 'style.css' | asset_url | stylesheet_tag }}
 
+    <style>
+      @font-face {
+        font-family: 'CustomFont';
+        src: url('{{ 'CalSans-SemiBold.woff2' | asset_url }}') format('woff2'),
+            url('{{ 'CalSans-SemiBold.woff' | asset_url }}') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+      }
+    </style>
+
     
 
     {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
