@@ -1,0 +1,67 @@
+<section class="page__brands brands">
+  <div class="brands__container">
+    <h2 class="brands__title title">{{ section.settings.heading }}</h2>
+    <div class="brands__items">
+      {%- for block in section.blocks -%}
+        <div class="brands__item">
+          <img src="{{ block.settings.image | image_url: width: 500 }}" alt="{{ block.settings.image.alt | escape }}">
+        </div>
+      {%- endfor -%}
+    </div>
+    {%- if section.settings.background_image != blank -%}
+      <img src="{{ section.settings.background_image | image_url: width: 1920 }}" alt="Background Image">
+    {%- endif -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Brands Section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Featuring the Best Brands"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "brand",
+      "name": "Brand Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Brand Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Brands Section",
+      "blocks": [
+        {
+          "type": "brand"
+        },
+        {
+          "type": "brand"
+        },
+        {
+          "type": "brand"
+        },
+        {
+          "type": "brand"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

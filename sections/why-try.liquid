@@ -1,0 +1,72 @@
+<section class="page__why why">
+  <div class="why__container">
+    <h2 class="why__title title">{{ section.settings.heading }}</h2>
+    <div class="why__items">
+      {%- for block in section.blocks -%}
+        <div class="why__item item-why">
+          <div class="item-why__icon">
+            <img src="{{ block.settings.icon | image_url: width: 100 }}" alt="{{ block.settings.icon.alt | escape }}">
+          </div>
+          <div class="item-why__title">{{ block.settings.title }}</div>
+          <div class="item-why__text">{{ block.settings.text }}</div>
+        </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Why Choose Us Section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Why try RedLine Garage"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature Item",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Feature Icon"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Feature Title",
+          "default": "Feature Title"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Feature Description",
+          "default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Why Choose Us Section",
+      "blocks": [
+        {
+          "type": "feature"
+        },
+        {
+          "type": "feature"
+        },
+        {
+          "type": "feature"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

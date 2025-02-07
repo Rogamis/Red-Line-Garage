@@ -1,0 +1,73 @@
+<section class="page__categories categories">
+  <div class="categories__container">
+    <h2 class="categories__title title">{{ section.settings.heading }}</h2>
+    <div class="categories__items">
+      {%- for block in section.blocks -%}
+        <a href="{{ block.settings.link }}" class="categories__item item-category">
+          <div class="item-category__title">{{ block.settings.category_title }}</div>
+          <div class="item-category__image">
+            <img src="{{ block.settings.image | image_url: width: 500 }}" alt="{{ block.settings.image.alt | escape }}">
+          </div>
+        </a>
+      {%- endfor -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Categories Section",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Choose based on Categories"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Category Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "category_title",
+          "label": "Category Title",
+          "default": "Category Name"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Category Image"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Category Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Categories Section",
+      "blocks": [
+        {
+          "type": "category"
+        },
+        {
+          "type": "category"
+        },
+        {
+          "type": "category"
+        },
+        {
+          "type": "category"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
