@@ -16,7 +16,7 @@
         "description": "Explore 50,000+ exclusive Hot Wheels models, from classic legends to rare limited editions.",
         "image": "shopify://shop_images/main-decor.jpg",
         "button_label": "Go Shop",
-        "button_link": ""
+        "button_link": "shopify://collections"
       }
     },
     "featured_collection_efLKTt": {
