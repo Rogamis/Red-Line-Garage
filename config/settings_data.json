@@ -381,7 +381,8 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".section-sections--18471939014884__custom_liquid_HzWm9i-padding {padding-top: 0 !important; padding-bottom: 0 !important;}"
+      ".section-sections--18471939014884__custom_liquid_HzWm9i-padding {padding-top: 0 !important; padding-bottom: 0 !important;}",
+      ".body-store__items img {object-fit: cover;}"
     ]
   }
 }
