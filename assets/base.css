@@ -9,6 +9,14 @@
     0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
 }
 
+@font-face {
+  font-family: 'CalSans';
+  src: url('{{ "CalSans-SemiBold.woff2" | asset_url }}') format('woff2'),
+    url('{{ "CalSans-SemiBold.woff" | asset_url }}') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
 .product-card-wrapper .card,
 .contains-card--product {
   --border-radius: var(--product-card-corner-radius);
