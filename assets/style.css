@@ -85,9 +85,6 @@ li {
 
 /* ---------------------------------------- */
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 50;
 }
@@ -102,11 +99,6 @@ li {
 
 .header__container {
   background: white;
-}
-
-.header__logo {
-}
-.header__menu {
 }
 
 .menu {
@@ -179,9 +171,6 @@ li {
 
 .main__container {
   display: flex;
-}
-a.header__logo img {
-  width: 240px;
 }
 
 a.body-footer__logo img {
@@ -338,11 +327,7 @@ section.page__store.store {
 .store__title {
   margin-bottom: 86px;
 }
-.store__body {
-}
 
-.body-store {
-}
 .body-store__header {
   margin-bottom: 32px;
   display: flex;
