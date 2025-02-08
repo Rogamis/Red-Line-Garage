@@ -36,33 +36,33 @@
         "category_A733xz": {
           "type": "category",
           "settings": {
-            "category_title": "Category Name",
+            "category_title": "INNO64",
             "image": "shopify://shop_images/Group_50.png",
-            "link": ""
+            "link": "shopify://collections"
           }
         },
         "category_g7CBQD": {
           "type": "category",
           "settings": {
-            "category_title": "Category Name",
+            "category_title": "TARMAC WORKS",
             "image": "shopify://shop_images/Group_53.png",
-            "link": ""
+            "link": "shopify://collections"
           }
         },
         "category_iCnTcQ": {
           "type": "category",
           "settings": {
-            "category_title": "Category Name",
+            "category_title": "HOT WHEELS",
             "image": "shopify://shop_images/Group_51.png",
-            "link": ""
+            "link": "shopify://collections"
           }
         },
         "category_3G3apT": {
           "type": "category",
           "settings": {
-            "category_title": "Category Name",
+            "category_title": "MINI GT",
             "image": "shopify://shop_images/Group_52.png",
-            "link": ""
+            "link": "shopify://collections"
           }
         }
       },
@@ -111,6 +111,14 @@
             "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           }
         },
+        "feature_8h8tKz": {
+          "type": "feature",
+          "settings": {
+            "icon": "shopify://shop_images/02.svg",
+            "title": "Feature Title",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }
+        },
         "feature_bM8Bhi": {
           "type": "feature",
           "settings": {
@@ -123,6 +131,7 @@
       "block_order": [
         "feature_FfMEek",
         "feature_LMYJNQ",
+        "feature_8h8tKz",
         "feature_bM8Bhi"
       ],
       "settings": {
