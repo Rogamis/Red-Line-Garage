@@ -24,7 +24,7 @@
       "settings": {
         "heading": "Check out the Store",
         "subheading": "NEW ON THE BOARD",
-        "collection": "frontpage",
+        "collection": "car-models",
         "products_to_show": 3,
         "view_all_label": "View all",
         "view_all_link": ""
