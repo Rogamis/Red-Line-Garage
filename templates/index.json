@@ -95,14 +95,6 @@
     "why_try_UUpJWn": {
       "type": "why-try",
       "blocks": {
-        "feature_FfMEek": {
-          "type": "feature",
-          "settings": {
-            "icon": "shopify://shop_images/01.svg",
-            "title": "Smooth Browsing",
-            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-          }
-        },
         "feature_LMYJNQ": {
           "type": "feature",
           "settings": {
@@ -129,7 +121,6 @@
         }
       },
       "block_order": [
-        "feature_FfMEek",
         "feature_LMYJNQ",
         "feature_8h8tKz",
         "feature_bM8Bhi"
